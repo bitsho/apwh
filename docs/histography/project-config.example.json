@@ -1,0 +1,21 @@
+{
+  "course_id": "apwh",
+  "course_name_en": "AP World History: Modern",
+  "course_name_zh": "AP 世界史：现代",
+  "time_start": 1200,
+  "time_end": "present",
+  "framework_source": "current official course framework or user-provided framework",
+  "target_event_count": 300,
+  "periods_or_units": [],
+  "period_weights": {},
+  "categories": [],
+  "themes": [],
+  "regions": [],
+  "default_dimension": "region",
+  "language_policy": "bilingual-en-zh",
+  "source_policy": "english-wikipedia-canonical",
+  "modes": ["concise", "classic", "cinema"],
+  "importance_scale": [1, 2, 3, 4, 5],
+  "classic_visible_lane_cap": 5,
+  "palettes": ["atlas-archive", "gilded-alloy", "porcelain-nocturne"]
+}
