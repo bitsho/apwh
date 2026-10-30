@@ -1,26 +1,20 @@
 # AP World History — Source Archive
 
-This repository collects the recoverable source artifacts from the AP World History projects developed in prior ChatGPT work sessions.
+This repository preserves source artifacts recovered from the AP World History workstream. It separates the different generations and modules so older snapshots are not mistaken for the current integrated site.
 
-## Repository layout
+## Contents
 
-- `apps/chronos-timeline/archive/2026-08-09-timeline-game.html` — earlier standalone timeline-ordering game snapshot.
-- `apps/chronos-causal/index.html` — CHRONOS v26 causal-investigation module snapshot (2026-08-14).
-- `apps/histography/index.html` — AP World Histography V3 bilingual interactive timeline snapshot (2026-09-07).
-- `docs/CHRONOS-PRD.md` — product requirements archive covering the broader CHRONOS platform, account flows, analytics, timeline game, and causal investigation.
-- `docs/histography/project-config.example.json` — Histography course configuration.
-- `docs/source-inventory.md` — provenance and recovery notes.
+- `apps/chronos-timeline/archive/2026-08-09-timeline-game.html` — recovered standalone timeline-ordering game snapshot.
+- `docs/CHRONOS-PRD.md` — CHRONOS product requirements, including homepage, accounts, personal analytics, timeline game, and causal investigation.
+- `docs/histography/project-config.example.json` — APWH Histography configuration.
+- `docs/source-inventory.md` — recovered artifact inventory, provenance, and remaining transfer gaps.
 
-## Important source-status note
+## Current status
 
-The HTML files above are independently recovered source snapshots. They are kept in separate directories because they represent different iterations and modules.
+The original timeline-game snapshot and the supporting PRD/configuration have been committed. Two newer HTML artifacts were also located in the project library: CHRONOS v26 (2026-08-14) and APWH Histography V3 (2026-09-07). Their search-index excerpts are accessible, but the full-file export path is currently unavailable, so they have not yet been added as complete source files.
 
-The CHRONOS PRD describes a wider integrated product, including the homepage, account/authentication flows, personal analytics, and a 400-event timeline game. The complete live Sites wrapper and its backend/database implementation were not present as standalone source files in the recovered project artifacts. The repository therefore preserves the available implementation snapshots and documentation without pretending that the snapshots alone reproduce every hosted integration.
+The repository is therefore a partial source archive, not yet a complete reproducible export of the latest hosted Sites project. See [source inventory](docs/source-inventory.md) for exact versions and status.
 
-## Running the standalone HTML snapshots
+## Running the recovered timeline snapshot
 
-Open the relevant HTML file directly in a modern browser. Some features retrieve Wikipedia summaries/images or load external libraries at runtime and therefore require an internet connection.
-
-## Source-of-truth guidance
-
-For future development, use the current explicit product requirements and verify the intended module before replacing an archived snapshot. Do not merge the three HTML snapshots into one page without reconciling their different data models and application scopes.
+Open `apps/chronos-timeline/archive/2026-08-09-timeline-game.html` in a modern browser. Some Wikipedia image requests require an internet connection.
